@@ -1,23 +1,22 @@
-<!--///////////////////////////////////////////////////////
-       // Porfolio section 
-       //////////////////////////////////////////////////////////-->
-
-  <div class="portfolio-parlex" id="portfolio">
-    <div class="parlex3-back">
+ <section class="service-parlex" id="service">
+    <section class="parlex-back-black">
       <div class="w-container">
         <div class="wrap">
-          <div class="portfolio">
-            <h1 class="portfolio-heading">Iniciar Sesión</h1>
-            <div class="sepreater"></div>
-          </div>
-        
-            <div class="container demo-1">
+          <div class="service-combo">
+            <div class="services">
+              <h1 class="service-heading">Iniciar Sesión</h1>
+              <div class="sepreater service"></div>
+            </div>
+           
+            <div class="w-row">
+
+
+
+
 
               <div class="login-box animated fadeInUp">
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-                  <div class="box-header">
-                   <h2>Log In</h2>
-                 </div>
+                 
                  <%= f.label :username %><br />
                   <%= f.text_field :username, autofocus: true, placeholder: "Usuario..." %>
                   <br/>
@@ -62,12 +61,17 @@
 
 <%= render "devise/shared/links" %>
      
-    </div><!-- /container -->
+
+
+
+
+
+    </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
+    </section>
+  </section>
 <!--///////////////////////////////////////////////////////
        // End Porfolio section 
        //////////////////////////////////////////////////////////-->
